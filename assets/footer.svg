@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="82" viewBox="0 0 1200 82">
+<style>
+  .mono { font-family: "Google Sans Code", "JetBrains Mono", "Cascadia Code", "Cascadia Mono", "IBM Plex Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-feature-settings:"liga" 1,"calt" 1; font-variant-ligatures: contextual common-ligatures; }
+  .muted { fill:#8b8e87; }
+  .faint { fill:#b1b3ad; }
+  .line { stroke:#e7e8e2; }
+  @media (prefers-color-scheme: dark) {
+    .muted { fill:#8d928b; }
+    .faint { fill:#60655f; }
+    .line { stroke:#292d29; }
+  }
+</style>
+<line x1="8" y1="22" x2="1192" y2="22" class="line" stroke-width="1"/>
+<text x="8" y="55" class="mono muted" font-size="12">systems / networks / identity / security / automation</text>
+<text x="1192" y="55" text-anchor="end" class="mono faint" font-size="12">build quietly. document properly.</text>
+</svg>

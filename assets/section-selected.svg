@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="54" viewBox="0 0 1200 54">
+<style>
+  .mono { font-family: "Google Sans Code", "JetBrains Mono", "Cascadia Code", "Cascadia Mono", "IBM Plex Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-feature-settings:"liga" 1,"calt" 1; font-variant-ligatures: contextual common-ligatures; }
+  .text { fill:#6f726c; }
+  .line { stroke:#e7e8e2; }
+  @media (prefers-color-scheme: dark) {
+    .text { fill:#a2a59e; }
+    .line { stroke:#292d29; }
+  }
+</style>
+<text x="8" y="31" class="mono text" font-size="13" letter-spacing=".8">selected work</text>
+<line x1="130" y1="27" x2="1192" y2="27" class="line" stroke-width="1"/>
+</svg>

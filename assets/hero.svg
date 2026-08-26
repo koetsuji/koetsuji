@@ -1,64 +1,106 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="286" viewBox="0 0 1200 286">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
 <style>
-  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
-  .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif; }
+  .mono { font-family: "Google Sans Code", "JetBrains Mono", "Cascadia Code", "Cascadia Mono", "IBM Plex Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-feature-settings:"liga" 1,"calt" 1; font-variant-ligatures: contextual common-ligatures; }
+  .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
 
-  .panel { fill:#fbfbfa; stroke:#e8e8e4; }
-  .text { fill:#20201e; }
-  .muted { fill:#777772; }
-  .faint { fill:#aaa9a3; }
-  .hair { stroke:#e7e7e2; }
-  .accent { fill:#74829a; }
-  .accent-stroke { stroke:#74829a; }
+  .bg { fill:#fafaf8; }
+  .panel { fill:#fdfdfb; stroke:#e8e8e2; }
+  .text { fill:#171816; }
+  .muted { fill:#6f726c; }
+  .faint { fill:#a4a69f; }
+  .line { stroke:#e7e8e2; }
+  .grid { stroke:#eeeee8; }
+  .accent { fill:#7b8a72; }
+  .accent-stroke { stroke:#7b8a72; }
 
   @media (prefers-color-scheme: dark) {
-    .panel { fill:#101214; stroke:#2a2d31; }
-    .text { fill:#f2f2ef; }
-    .muted { fill:#999d9f; }
-    .faint { fill:#6f7477; }
-    .hair { stroke:#272a2e; }
-    .accent { fill:#95a4bd; }
-    .accent-stroke { stroke:#95a4bd; }
+    .bg { fill:#0e100f; }
+    .panel { fill:#111412; stroke:#252925; }
+    .text { fill:#f0f1ec; }
+    .muted { fill:#a2a59e; }
+    .faint { fill:#6c706a; }
+    .line { stroke:#292d29; }
+    .grid { stroke:#1a1d1b; }
+    .accent { fill:#9eaf93; }
+    .accent-stroke { stroke:#9eaf93; }
   }
 </style>
 
-<rect x="22" y="22" width="1156" height="242" rx="20" class="panel"/>
+<rect width="1200" height="360" rx="24" class="bg"/>
 
-<!-- top rail -->
-<text x="58" y="66" class="mono faint" font-size="14">~/koetsuji</text>
-<line x1="58" y1="84" x2="1142" y2="84" class="hair" stroke-width="1"/>
-
-<!-- identity -->
-<text x="58" y="132" class="mono text" font-size="17" font-weight="600" letter-spacing="1.2">AGAH CELEN</text>
-
-<!-- main line -->
-<text x="58" y="184" class="mono text" font-size="42" font-weight="600" letter-spacing="-1.4">
-  systems / networks / security
-</text>
-
-<!-- copy -->
-<text x="58" y="221" class="sans muted" font-size="18">
-  hybrid infrastructure, identity, automation and small tools I actually use.
-</text>
-
-<!-- right-side tiny console detail -->
-<g transform="translate(944 112)">
-  <text x="0" y="0" class="mono faint" font-size="12">status</text>
-  <circle cx="4" cy="29" r="4" class="accent">
-    <animate attributeName="opacity" values="0.45;1;0.45" dur="3.2s" repeatCount="indefinite"/>
-  </circle>
-  <text x="18" y="34" class="mono muted" font-size="13">building</text>
-
-  <text x="0" y="73" class="mono faint" font-size="12">focus</text>
-  <text x="0" y="101" class="mono muted" font-size="13">infra + security</text>
+<!-- quiet grid -->
+<g class="grid" stroke-width="1" opacity=".58">
+  <line x1="40" y1="72" x2="1160" y2="72"/>
+  <line x1="40" y1="144" x2="1160" y2="144"/>
+  <line x1="40" y1="216" x2="1160" y2="216"/>
+  <line x1="40" y1="288" x2="1160" y2="288"/>
+  <line x1="160" y1="28" x2="160" y2="332"/>
+  <line x1="320" y1="28" x2="320" y2="332"/>
+  <line x1="480" y1="28" x2="480" y2="332"/>
+  <line x1="640" y1="28" x2="640" y2="332"/>
+  <line x1="800" y1="28" x2="800" y2="332"/>
+  <line x1="960" y1="28" x2="960" y2="332"/>
 </g>
 
-<!-- understated blinking cursor -->
-<rect x="727" y="159" width="11" height="29" rx="1.5" class="accent" opacity=".72">
+<rect x="32" y="28" width="1136" height="304" rx="20" class="panel"/>
+
+<!-- top bar -->
+<text x="64" y="68" class="mono faint" font-size="12">koetsuji / github</text>
+<text x="1135" y="68" text-anchor="end" class="mono faint" font-size="12">2026</text>
+<line x1="64" y1="88" x2="1136" y2="88" class="line" stroke-width="1"/>
+
+<!-- headline -->
+<text x="64" y="150" class="mono text" font-size="16" font-weight="600" letter-spacing=".75">AGAH CELEN</text>
+
+<text x="64" y="218"
+      class="mono text"
+      font-size="38"
+      font-weight="500"
+      letter-spacing="-1.0"
+      textLength="610"
+      lengthAdjust="spacingOnly">systems / network / security</text>
+
+<!-- blinking code cursor -->
+<rect x="687" y="187" width="10" height="36" rx="1.5" class="accent" opacity=".76">
   <animate attributeName="opacity"
-           values=".72;.72;.12;.12;.72"
-           keyTimes="0;0.44;0.45;0.82;1"
-           dur="1.65s"
+           values=".76;.76;.10;.10;.76"
+           keyTimes="0;0.46;0.47;0.82;1"
+           dur="1.55s"
            repeatCount="indefinite"/>
 </rect>
+
+<text x="65" y="269" class="sans muted" font-size="15">
+  hybrid infrastructure · identity · automation · small tools
+</text>
+
+<text x="65" y="298" class="mono faint" font-size="10.5" letter-spacing=".15">
+  build quietly / document properly
+</text>
+
+<!-- topology -->
+<g transform="translate(858,112)">
+  <text x="0" y="-16" class="mono faint" font-size="10">working set</text>
+
+  <line x1="24" y1="40" x2="118" y2="40" class="line" stroke-width="1.5"/>
+  <line x1="118" y1="40" x2="204" y2="92" class="line" stroke-width="1.5"/>
+  <line x1="118" y1="40" x2="118" y2="138" class="line" stroke-width="1.5"/>
+  <line x1="118" y1="138" x2="204" y2="92" class="line" stroke-width="1.5"/>
+
+  <circle cx="24" cy="40" r="10" class="panel"/>
+  <circle cx="118" cy="40" r="10" class="panel"/>
+  <circle cx="204" cy="92" r="10" class="panel"/>
+  <circle cx="118" cy="138" r="10" class="panel"/>
+
+  <text x="24" y="44" text-anchor="middle" class="mono muted" font-size="8">ID</text>
+  <text x="118" y="44" text-anchor="middle" class="mono muted" font-size="8">NET</text>
+  <text x="204" y="96" text-anchor="middle" class="mono muted" font-size="8">SEC</text>
+  <text x="118" y="142" text-anchor="middle" class="mono muted" font-size="8">SYS</text>
+
+  <!-- moving packet -->
+  <circle r="3.2" class="accent">
+    <animateMotion dur="6.8s" repeatCount="indefinite"
+      path="M24,40 L118,40 L204,92 L118,138 L118,40 L24,40"/>
+    <animate attributeName="opacity" values=".35;1;.35" dur="3.4s" repeatCount="indefinite"/>
+  </circle>
+</g>
 </svg>

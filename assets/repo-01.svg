@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="196" viewBox="0 0 380 196">
+<style>
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+  .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif; }
+
+  .panel { fill:#fbfbfa; stroke:#e8e8e4; }
+  .text { fill:#20201e; }
+  .muted { fill:#777772; }
+  .faint { fill:#aaa9a3; }
+  .hair { stroke:#e7e7e2; }
+  .accent { fill:#7d8fb2; }
+  .accent-stroke { stroke:#7d8fb2; }
+
+  @media (prefers-color-scheme: dark) {
+    .panel { fill:#101214; stroke:#2a2d31; }
+    .text { fill:#f2f2ef; }
+    .muted { fill:#999d9f; }
+    .faint { fill:#6f7477; }
+    .hair { stroke:#272a2e; }
+  }
+</style>
+
+<rect x="8" y="8" width="364" height="180" rx="16" class="panel"/>
+
+<!-- tiny hand-tuned accent, not a gradient -->
+<rect x="8" y="8" width="4" height="180" rx="2" class="accent" opacity=".72"/>
+
+<text x="32" y="44" class="mono faint" font-size="12">01</text>
+<text x="32" y="84" class="mono text" font-size="21" font-weight="600">Windows Battery Report</text>
+
+<text x="32" y="113" class="sans muted" font-size="14">battery health, without the ugly report</text>
+
+<line x1="32" y1="137" x2="348" y2="137" class="hair" stroke-width="1"/>
+
+<text x="32" y="163" class="mono muted" font-size="12">PowerShell</text>
+<text x="330" y="164" class="mono text" font-size="16">↗</text>
+
+<!-- low-key activity line -->
+<line x1="262" y1="161" x2="312" y2="161" class="hair" stroke-width="2" stroke-linecap="round"/>
+<circle cx="268" cy="161" r="2.6" class="accent" opacity=".55">
+  <animate attributeName="cx" values="268;306;268" dur="6.9s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values=".25;.7;.25" dur="6.9s" repeatCount="indefinite"/>
+</circle>
+</svg>

@@ -1,19 +1,45 @@
-# Install
+# GitHub profile README — designer v2
 
-For a GitHub profile README, create a public repository named exactly:
+This version intentionally avoids the common "AI portfolio" look:
+- no glassmorphism
+- no big rainbow gradients
+- no emoji icons
+- no badge wall
+- no fake terminal overload
+- restrained color, spacing and typography
+- dark-mode aware
+- subtle SVG-only motion
 
-`koetsuji`
+## Install
 
-Then put these files at the repository root:
+Create/use the public profile repository:
+
+`koetsuji/koetsuji`
+
+Put these files at its root:
 
 - `README.md`
 - `assets/hero.svg`
-- `assets/card-battery.svg`
-- `assets/card-palo.svg`
-- `assets/card-weather.svg`
+- `assets/repo-01.svg`
+- `assets/repo-02.svg`
+- `assets/repo-03.svg`
 
-GitHub does not allow arbitrary CSS or JavaScript on profile READMEs.
-This design therefore uses lightweight SVG + Markdown/HTML that GitHub can render safely.
+GitHub profile READMEs do not allow arbitrary custom CSS/JavaScript.
+The styling and motion live inside the SVG assets instead.
 
-To change a project link, edit the `<a href="...">` URLs in `README.md`.
-To change text/colors/animation, edit the SVG files in `assets/`.
+## Animation
+
+The motion is deliberately tiny:
+- status dot slowly breathes
+- cursor softly blinks
+- each repo card has a very slow activity dot
+
+There is no JavaScript.
+
+## Typography
+
+The primary type stack is:
+
+`ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace`
+
+This gives a coder feel without turning the page into a fake terminal.

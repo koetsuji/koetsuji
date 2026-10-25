@@ -1,7 +1,7 @@
 <p>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/koetsuji/koetsuji/raw/main/assets/hero-dark.svg">
-    <img src="https://github.com/koetsuji/koetsuji/raw/main/assets/hero-light.svg" width="100%" alt="Agah Celen: systems, networks and security. Hybrid infrastructure, identity, automation and small tools.">
+    <img src="https://github.com/koetsuji/koetsuji/raw/main/assets/hero-light.svg" width="100%" alt="systems / networks / security. Hybrid infrastructure, identity, automation and small tools.">
   </picture>
 </p>
 

@@ -40,7 +40,6 @@ OUT_DIR = HERE.parent / "assets"
 # --------------------------------------------------------------------------
 
 CONTENT = {
-    "name": "Agah Celen",
     "headline": ["systems", "networks", "security"],
     "intro": "Hybrid infrastructure, identity, automation and small tools.",
     # The request path in the hero: a request crosses each layer in order.
@@ -441,14 +440,13 @@ def build_hero() -> Doc:
     c = CONTENT
     T = 10
     x = L + PAD
-    name_bl = T + PAD + cap("l16")
-    disp_bl = name_bl + 26 + cap("display")
+    disp_bl = T + PAD + 8 + cap("display")
     intro_bl = disp_bl + 30 + cap("c16")
     D = round(intro_bl + 40)  # the grid line the request travels along
     row_h = 104
     B = D + row_h
     H = B + 10
-    d = Doc("hero", W, H, f"{c['name']}: {' / '.join(c['headline'])}. {c['intro']}")
+    d = Doc("hero", W, H, f"{' / '.join(c['headline'])}. {c['intro']}")
 
     d.defs.append(
         f'<clipPath id="frame"><rect x="{L}" y="{T}" width="{R - L}" height="{B - T}"/></clipPath>'
@@ -473,7 +471,6 @@ def build_hero() -> Doc:
         d.cross(px, py)
 
     # Type.
-    d.text(x, name_bl, c["name"], "l16", cls="t1")
     # Headline: words and slashes placed individually so the slashes sit
     # 0.12em from each word, which keeps heading-64 inside the padding.
     face_key, size, tracking = ROLES["display"]
